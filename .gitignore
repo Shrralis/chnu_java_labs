@@ -20,3 +20,8 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+.idea/chnu_java_labs.iml
+.idea/inspectionProfiles/
+.idea/modules.xml
+.idea/workspace.xml
+out/
