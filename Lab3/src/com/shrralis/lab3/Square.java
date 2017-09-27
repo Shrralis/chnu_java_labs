@@ -36,7 +36,7 @@ public class Square extends Rectangle implements ISquare {
         return new Square(d / Math.sqrt(2));
     }
 
-    public static Square createByInnnerCircleRadius(double r) {
+    public static Square createByInnerCircleRadius(double r) {
         return new Square(r * 2);
     }
 
