@@ -13,7 +13,7 @@ import com.shrralis.lab3.interfaces.IRectangle;
 @SuppressWarnings("unused")
 public class Rectangle extends Shape implements IRectangle {
 
-    public Rectangle() {
+    protected Rectangle() {
     }
 
     private Rectangle(double sideA, double sideB) {
@@ -36,7 +36,7 @@ public class Rectangle extends Shape implements IRectangle {
         return new Rectangle(side, Math.sqrt(diagonal * diagonal - side * side));
     }
 
-    public static Rectangle createBySideLengthAndOutCircleRadius(double side, double radius) {
+    public static Rectangle createBySideLengthAndOuterCircleRadius(double side, double radius) {
         return createBySideAndDiagonalLength(side, radius * 2);
     }
 

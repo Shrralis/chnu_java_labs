@@ -13,7 +13,7 @@ import com.shrralis.lab3.interfaces.ISquare;
 @SuppressWarnings("unused")
 public class Square extends Rectangle implements ISquare {
 
-    public Square() {
+    private Square() {
     }
 
     private Square(double side) {
@@ -36,11 +36,11 @@ public class Square extends Rectangle implements ISquare {
         return new Square(d / Math.sqrt(2));
     }
 
-    public static Square createByInCircleRadius(double r) {
+    public static Square createByInnnerCircleRadius(double r) {
         return new Square(r * 2);
     }
 
-    public static Square createByOutCircleRadius(double r) {
+    public static Square createByOuterCircleRadius(double r) {
         return new Square(r / Math.sqrt(2) / 2);
     }
 
