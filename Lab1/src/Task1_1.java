@@ -1,5 +1,5 @@
 /*
-Lab #1 basics of Java
+Lab #2 basics of Java
 by Yaroslav Zhyravov aka Shrralis
 Group: 343sk
 Chair: Software Engineering

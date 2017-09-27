@@ -1,17 +1,22 @@
 package com.shrralis.lab3;
 
-public abstract class Shape {
+import com.shrralis.lab3.interfaces.IShape;
+
+public abstract class Shape implements IShape {
     private double[] lengthOfSides;
 
+    @Override
     public final double[] getLengthOfSides() {
         return this.lengthOfSides;
     }
 
+    @Override
     public final void setLengthOfSides(double[] lengthOfSides) {
         this.lengthOfSides = lengthOfSides;
     }
 
-    public final double getPerimeter() {
+    @Override
+    public double getPerimeter() {
         if (this.lengthOfSides == null) {
             return -1;
         }
@@ -24,9 +29,8 @@ public abstract class Shape {
         return perimeter;
     }
 
+    @Override
     public boolean isValid() {
         return this.lengthOfSides != null && this.lengthOfSides.length > 0;
     }
-
-    public abstract double getArea();
 }

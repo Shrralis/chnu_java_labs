@@ -91,6 +91,11 @@ public class Square extends Rectangle implements ISquare {
     }
 
     @Override
+    public double getPerimeter() {
+        return 4 * getSide();
+    }
+
+    @Override
     public boolean isValid() {
         return getSide() > 0;
     }

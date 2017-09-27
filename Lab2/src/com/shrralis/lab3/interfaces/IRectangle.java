@@ -1,7 +1,6 @@
 package com.shrralis.lab3.interfaces;
 
-public interface IRectangle {
-
+public interface IRectangle extends IShape {
     double getSideA();
 
     void setSideA(double length);

@@ -98,6 +98,11 @@ public class Rectangle extends Shape implements IRectangle {
     }
 
     @Override
+    public double getPerimeter() {
+        return getSideA() * 2 + getSideB() * 2;
+    }
+
+    @Override
     public double getArea() {
         return getSideA() * getSideB();
     }
