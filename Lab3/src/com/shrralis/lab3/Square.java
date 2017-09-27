@@ -1,5 +1,13 @@
 package com.shrralis.lab3;
 
+/*
+Lab #3 shape operations
+by Yaroslav Zhyravov aka Shrralis
+Group: 343sk
+Chair: Software Engineering
+Date: 12.09.2017
+ */
+
 import com.shrralis.lab3.interfaces.ISquare;
 
 @SuppressWarnings("unused")
