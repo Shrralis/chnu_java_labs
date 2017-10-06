@@ -40,7 +40,6 @@ public class Test {
             array.add(o);
         }
         System.out.println(array.toJSONString());
-
         bw.write(array.toJSONString());
         bw.close();
         fw.close();
