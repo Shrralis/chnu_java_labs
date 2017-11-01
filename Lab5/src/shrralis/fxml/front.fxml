@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<SplitPane xmlns:fx="http://javafx.com/fxml/1" dividerPositions="0.5025125628140703" maxHeight="-Infinity"
+           maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0"
+           prefWidth="657.0" xmlns="http://javafx.com/javafx/9" fx:controller="shrralis.fxml.Controller">
+    <items>
+        <ScrollPane prefHeight="200.0" prefWidth="200.0">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="645.0">
+                    <children>
+                        <TextField fx:id="nameTF" layoutX="91.0" layoutY="14.0" promptText="Enter name"/>
+                        <TextField fx:id="surnameTF" layoutX="91.0" layoutY="50.0" promptText="Enter surname"/>
+                        <TextField fx:id="patronymicTF" layoutX="91.0" layoutY="87.0" promptText="Enter patronymic"/>
+                        <TextField fx:id="heightTF" layoutX="340.0" layoutY="14.0" promptText="Enter height"/>
+                        <TextField fx:id="weightTF" layoutX="340.0" layoutY="50.0" promptText="Enter weight"/>
+                        <TextField fx:id="nicknameTF" layoutX="340.0" layoutY="87.0" promptText="Enter nickname"/>
+                        <TextField fx:id="bDateTF" layoutX="91.0" layoutY="124.0" promptText="Enter birth date"/>
+                        <TextField fx:id="phoneTF" layoutX="340.0" layoutY="124.0" promptText="Enter phone"/>
+                        <Label layoutX="18.0" layoutY="19.0" text="Name:"/>
+                        <Label layoutX="17.0" layoutY="55.0" text="Surname:"/>
+                        <Label layoutX="17.0" layoutY="92.0" text="Patronymic:"/>
+                        <Label layoutX="17.0" layoutY="129.0" text="Birth date:"/>
+                        <Label layoutX="269.0" layoutY="19.0" text="Height:"/>
+                        <Label layoutX="268.0" layoutY="55.0" text="Weight:"/>
+                        <Label layoutX="270.0" layoutY="92.0" text="Nickname:"/>
+                        <Label layoutX="270.0" layoutY="129.0" text="Phone:"/>
+                        <Button fx:id="convertButton" defaultButton="true" layoutX="509.0" layoutY="161.0"
+                                mnemonicParsing="false" onAction="#onClick" text="Convert to text">
+                            <styleClass>
+                                <String fx:value="success"/>
+                                <String fx:value="btn"/>
+                            </styleClass>
+                        </Button>
+                        <CheckBox fx:id="marriedCB" layoutX="18.0" layoutY="166.0" mnemonicParsing="false"
+                                  text="Married"/>
+                        <RadioButton fx:id="maleRB" layoutX="108.0" layoutY="166.0" mnemonicParsing="false" text="Male">
+                            <toggleGroup>
+                                <ToggleGroup fx:id="gender"/>
+                            </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="femaleRB" layoutX="175.0" layoutY="166.0" mnemonicParsing="false"
+                                     text="Female" toggleGroup="$gender"/>
+                        <Button fx:id="clearButton" layoutX="425.0" layoutY="161.0" mnemonicParsing="false"
+                                onAction="#onClick" text="Clear">
+                            <styleClass>
+                                <String fx:value="danger"/>
+                                <String fx:value="action-btn"/>
+                            </styleClass>
+                        </Button>
+                        <Button fx:id="aboutButton" alignment="CENTER" layoutX="513.0" layoutY="14.0" maxHeight="140.0"
+                                maxWidth="117.0" minHeight="140.0" minWidth="117.0" mnemonicParsing="false"
+                                onAction="#onClick" prefHeight="140.0" prefWidth="117.0" text="About author">
+                            <styleClass>
+                                <String fx:value="info"/>
+                                <String fx:value="action-btn"/>
+                            </styleClass>
+                        </Button>
+                        <ToggleButton fx:id="editToggleButton" layoutX="268.0" layoutY="161.0" maxWidth="143.0"
+                                      minWidth="143.0" mnemonicParsing="false" onAction="#onClick" prefWidth="143.0"
+                                      text="Editing result ON"/>
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+            <children>
+                <TextArea fx:id="resultTextArea" editable="false" layoutX="7.0" layoutY="-2.0" prefHeight="195.0"
+                          prefWidth="598.0" promptText="Here will be your converted information"
+                          AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                          AnchorPane.topAnchor="0.0">
+                    <styleClass>
+                        <String fx:value="text-area"/>
+                        <String fx:value="accordion"/>
+                    </styleClass>
+                </TextArea>
+            </children>
+        </AnchorPane>
+    </items>
+</SplitPane>
